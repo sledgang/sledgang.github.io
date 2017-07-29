@@ -2,3 +2,9 @@
 layout: page
 ---
 {{ content }}
+
+{% assign author = site.authors[page.author] %}
+<aside class="c-article__meta">
+    by
+    <a href="https://github.com/{{ author.github }}">{{ author.name }}</a> &mdash; {{ page.date | date: "%b %-d, %Y" }}
+</aside>
