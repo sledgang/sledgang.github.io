@@ -22,9 +22,45 @@ url: "http://example.com" # the base hostname & protocol for your site
 
 # Social
 githubUsername: y32
-twitterUsername:
-dribbbleUsername:
-codepenUsername:
+
+# Define the authors here, along the format
+authors:
+  aria:
+    name: aria
+    discord_discrim: 9888
+    github: snorflake
+  cyan:
+    name: Cyan
+    discord_discrim: '0340'
+    github: cyan101
+  echo:
+    name: Echo
+    discord_discrim: 5248
+    github: LeggoMyEcho
+  ghosty:
+    name: Ghosty
+    discord_discrim: 8204
+    github: TrenchFroast
+  nekka:
+    name: NekkaLucifer
+    discord_discrim: 9620
+    github: daniel-worrall
+  nymous:
+    name: Nymous
+    discord_discrim: 4859
+    github: nymous
+  snapcase:
+    name: snapcase
+    discord_discrim: 8712
+    github: snapcase
+  unleashy:
+    name: Unleashy
+    discord_discrim: 9254
+    github: unleashy
+  z64:
+    name: z64
+    discord_discrim: 2639
+    github: z64
 
 # Build settings
 markdown: kramdown
