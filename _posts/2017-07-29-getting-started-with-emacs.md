@@ -118,4 +118,6 @@ If you have rubocop throwing some basic linting errors, you can get it to auto-f
 
 
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot9.png)
+
+
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot10.png)
