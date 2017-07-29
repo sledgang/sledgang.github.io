@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Y32. Chaotic (mostly) evil.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://y32.github.io/" # the base hostname & protocol for your site
-
+future: true
 # Social
 githubUsername: y32
 
