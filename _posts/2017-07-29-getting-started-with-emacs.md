@@ -25,12 +25,12 @@ Then start emacs again, and you'll be greeted with something that looks like thi
 Hit enter a few times and wait for the packages to install. 
 
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot3.png)
-Once this is done, there's a few things we have to do to get going in ruby. Before that, if you don't know how to navigate around with vim keys, i suggest you take a look at the tutorial by pressing `Spc-h-T` and checking out [The quickstart guide](http://spacemacs.org/doc/QUICK_START.html)
+Once this is done, there's a few things we have to do to get going in ruby. Before that, if you don't know how to navigate around with vim keys, i suggest you take a look at the tutorial by pressing `SPC-h-T` and checking out [The quickstart guide](http://spacemacs.org/doc/QUICK_START.html)
 
 Setting up ruby
 ===================
 
-First off, we need to add a few layers. Hit `Spc-f-e-d` to head to your config file and find the line that reads
+First off, we need to add a few layers. Hit `SPC-f-e-d` to head to your config file and find the line that reads
 ```elisp
    dotspacemacs-configuration-layers
    '(
@@ -84,7 +84,7 @@ Edit it like so to add some necessary layers
    )
 ```
 
-Now press `Spc-q-r` to restart emacs, and it'll download all the packages.
+Now press `SPC-q-r` to restart emacs, and it'll download all the packages.
 
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot4.png)
 
@@ -93,4 +93,29 @@ To get ruby linting to work a bit better, we need to install a few gems by runni
 gem install pry pry-doc ruby_parser rubocop
 ```
 
+Basic navigation and editing
+===================================
+<!-- TODO: more? -->
+There are a few keys you need to know. To navigate between files you can use `SPC-f-f`.
 
+![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot5.png)
+
+To open the git client you can use `SPC-g-s` and then `h` to see keybinds.
+![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot6.png)
+
+If you'd like to see all the commands you have available when editing in ruby mode, you can see what the spacemacs ruby layer added by pressing `SPC-h-l` and then typing in `ruby`.
+
+![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot7.png)
+
+Ruby shortcuts
+=================
+
+Some handy shortcuts for ruby.
+
+![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot8.png)
+
+If you have rubocop throwing some basic linting errors, you can get it to auto-fix it by running `SPC-m-r-r-F`, like so
+
+
+![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot9.png)
+![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot10.png)
