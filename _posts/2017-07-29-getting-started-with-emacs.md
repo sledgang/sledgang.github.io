@@ -27,6 +27,9 @@ Hit enter a few times and wait for the packages to install.
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot3.png)
 Once this is done, there's a few things we have to do to get going in ruby. Before that, if you don't know how to navigate around with vim keys, i suggest you take a look at the tutorial by pressing `Spc-h-T` and checking out [The quickstart guide](http://spacemacs.org/doc/QUICK_START.html)
 
+Setting up ruby
+===================
+
 First off, we need to add a few layers. Hit `Spc-f-e-d` to head to your config file and find the line that reads
 ```elisp
    dotspacemacs-configuration-layers
@@ -80,3 +83,14 @@ Edit it like so to add some necessary layers
    ;; version-control
    )
 ```
+
+Now press `Spc-q-r` to restart emacs, and it'll download all the packages.
+
+![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot4.png)
+
+To get ruby linting to work a bit better, we need to install a few gems by running the following in a shell
+```
+gem install pry pry-doc ruby_parser rubocop
+```
+
+
