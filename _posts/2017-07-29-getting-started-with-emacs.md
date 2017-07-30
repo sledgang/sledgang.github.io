@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started With Spacemacs
-author: Aria
+author: aria
 ---
 
 [Spacemacs](http://spacemacs.org) is a pre-made configuration for GNU editor Emacs. It combines the superior editing of vim and the extensibility of emacs into one thing,as well as premade configs for many languages.
@@ -107,6 +107,10 @@ If you'd like to see all the commands you have available when editing in ruby mo
 
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot7.png)
 
+If you want to have a visual navigation of your files, you can press `SPC-p-t`. This only works if you are in a project (defined by being in a git project), so if you are not, you can press `SPC-f-t` instead.
+
+![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot1000.png)
+
 Ruby shortcuts
 =================
 
@@ -121,3 +125,31 @@ If you have rubocop throwing some basic linting errors, you can get it to auto-f
 
 
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot10.png)
+
+You can comment a line(s) by selecting it and comenting with `SPC-;`.
+
+Final Tweaks
+===============
+
+These aren't necessary, but I like to make these tweaks when setting up my emacs.
+
+Installing themes
+-----------------
+
+Head to your config file and add `themes-megapack` to your list of layers and restart with `SPC-q-r`.
+
+```diff
+     ;; spell-checking
+     syntax-checking
++    themes-megapack
+     ;; version-control
+```
+
+You can then browse themes with `SPC-T-s`. Once you've found the theme you like (I pick `monokai` or `solarized-dark`), you can set it as default in spacemacs by editing this line.
+
+```diff
+-   dotspacemacs-themes '(spacemacs-dark
++   dotspacemacs-themes '(monokai
++                         spacemacs-dark
+                          spacemacs-light)
+```
