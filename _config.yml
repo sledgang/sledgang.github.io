@@ -27,6 +27,7 @@ githubUsername: y32
 authors:
   aria:
     name: aria
+    real_name: Aria Edmonds
     discord_discrim: 9888
     github: snorflake
   cyan:
@@ -43,10 +44,12 @@ authors:
     github: TrenchFroast
   nekka:
     name: NekkaLucifer
+    real_name: Daniel Worrall
     discord_discrim: 9620
     github: daniel-worrall
   nymous:
     name: Nymous
+    real_name: Thomas Gaudin
     discord_discrim: 4859
     github: nymous
   snapcase:
@@ -55,10 +58,12 @@ authors:
     github: snapcase
   unleashy:
     name: Unleashy
+    real_name: Eduardo Fernandes
     discord_discrim: 9254
     github: unleashy
   z64:
     name: z64
+    real_name: Zac Nowicki
     discord_discrim: 2639
     github: z64
 
