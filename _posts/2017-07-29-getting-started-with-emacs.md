@@ -6,8 +6,7 @@ author: aria
 
 [Spacemacs](http://spacemacs.org) is a pre-made configuration for GNU editor [Emacs](https://www.gnu.org/software/emacs/). It combines the superior editing of [vim](http://www.vim.org) and the extensibility of Emacs into one thing, as well as premade configs for many languages.
 
-Installing Emacs
-===================
+## Installing Emacs
 
 Depending on your operating system, installing Emacs should be quite effortless. On Arch Linux it's as simple as
 ```shell
@@ -27,8 +26,7 @@ Hit enter a few times and wait for the packages to install.
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot3.png)
 Once this is done, there's a few things we have to do to get going in ruby. Before that, if you don't know how to navigate around with vim keys, I suggest you take a look at the tutorial by pressing `SPC-h-T` and checking out [The quickstart guide](http://spacemacs.org/doc/QUICK_START.html)
 
-Setting up Ruby
-===================
+## Setting up Ruby
 
 First off, we need to add a few layers. Layers are pre-configured groups of plugins made for emacs, to help you get straight into programming. Hit `SPC-f-e-d` to head to your config file and find the line that reads
 ```elisp
@@ -109,8 +107,7 @@ gem install pry pry-doc ruby_parser rubocop
 ```
 You can read more about what these enable by pressing `SPC-h-l ruby`.
 
-Basic navigation and editing
-===================================
+## Basic navigation and editing
 There are a few keys you need to know. To navigate between files you can use `SPC-f-f`.
 
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot5.png)
@@ -126,8 +123,7 @@ If you want to have a visual navigation of your files, you can press `SPC-p-t`. 
 
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot1000.png)
 
-Ruby shortcuts
-=================
+## Ruby shortcuts
 
 Some handy shortcuts for ruby.
 
@@ -143,13 +139,11 @@ If you have rubocop throwing some basic linting errors, you can get it to auto-f
 
 You can comment a line(s) by selecting it and commenting with `SPC-;`.
 
-Final Tweaks
-===============
+## Final Tweaks
 
 These aren't necessary, but I like to make these tweaks when setting up my emacs.
 
-Installing themes
------------------
+### Installing themes
 
 Head to your config file and add `themes-megapack` to your list of layers and restart with `SPC-q-r`.
 
@@ -169,8 +163,7 @@ You can then browse themes with `SPC-T-s`. Once you've found the theme you like 
                           spacemacs-light)
 ```
 
-Changing fonts
------------------
+### Changing fonts
 
 If you'd like to change your font, head into your config file with `SPC-f-e-d` and look for this line
 ```elisp
