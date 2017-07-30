@@ -83,17 +83,17 @@ Edit it like so to add some necessary layers
 ```
 
 Each layer does the following:
-  * auto-completion
+  * `auto-completion`
   Adds auto completion.
-  * git
+  * `git`
   Adds the [magit](https://magit.vc) client to emacs.
-  * shell
-  Enables you to use your shell via `SPC-'`
-  * ruby
+  * `shell
+`  Enables you to use your shell via `SPC-'`
+  * `ruby`
   Adds the ruby layer, with code completion, highlighting, etc.
-  * ruby-on-rails
+  * `ruby-on-rails`
   Helper layer for rails development, navigating, etc.
-  * syntax-checking
+  * `syntax-checking`
   Enables linting and inline display of things like rubocop.
   
 If you'd like to learn more, you can view their help docs with `SPC-h-l`
