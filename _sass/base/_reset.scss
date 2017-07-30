@@ -13,7 +13,6 @@
 
 *, *:before, *:after { box-sizing: inherit; }
 
-
 html {
   min-height: 100%;
   box-sizing: border-box;
@@ -39,16 +38,6 @@ nav,
 section {
   display: block;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-
-}
-
 
 /* Media */
 audio, canvas, progress, video {
@@ -79,7 +68,6 @@ svg {
   max-height: 100%
 }
 
-
 /* Links */
 
 a {
@@ -102,7 +90,6 @@ figure {
   margin: 0;
 }
 
-
 hr {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -115,7 +102,3 @@ hr {
 /* Code Blocks */
 
 pre { overflow: auto; }
-
-code, pre {
-
-}
