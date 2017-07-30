@@ -102,3 +102,15 @@ hr {
 /* Code Blocks */
 
 pre { overflow: auto; }
+
+code.highlighter-rouge {
+  margin: 0;
+  padding: 0.2em 0;
+  background-color: #eef;
+  vertical-align: text-top;
+
+  &::before, &::after {
+    letter-spacing: -0.2em;
+    content: "\00a0";
+  }
+}
