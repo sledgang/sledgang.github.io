@@ -4,6 +4,10 @@ script:
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site --disable-external
 
+branches:
+  only:
+    - master
+
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
