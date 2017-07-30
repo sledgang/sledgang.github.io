@@ -14,16 +14,16 @@ sudo pacman -S emacs
 ```
 
 Once installed, it'll look pretty terrible.
-![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot1.png)
+![image]({{site.url}}/assets/getting-started-with-spacemacs/screenshot1.png)
 So let's close out of that with `C-x C-c (Ctrl-x Ctrl-c)` and install Spacemacs. If we go to [their website](http://spacemacs.org), you can see that the install string is to run
 ```shell
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 Then start emacs again, and you'll be greeted with something that looks like this.
-![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot2.png)
-Hit enter a few times and wait for the packages to install. 
+![image]({{site.url}}/assets/getting-started-with-spacemacs/screenshot2.png)
+Hit enter a few times and wait for the packages to install.
 
-![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot3.png)
+![image]({{site.url}}/assets/getting-started-with-spacemacs/screenshot3.png)
 Once this is done, there's a few things we have to do to get going in ruby. Before that, if you don't know how to navigate around with vim keys, I suggest you take a look at the tutorial by pressing `SPC-h-T` and checking out [The quickstart guide](http://spacemacs.org/doc/QUICK_START.html)
 
 ## Setting up Ruby
@@ -93,13 +93,13 @@ Each layer does the following:
   Helper layer for rails development, navigating, etc.
   * `syntax-checking`
   Enables linting and inline display of things like rubocop.
-  
+
 If you'd like to learn more, you can view their help docs with `SPC-h-l`
-  
+
 
 Now press `SPC-q-r` to restart emacs, and it'll download all the packages.
 
-![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot4.png)
+![image]({{site.url}}/assets/getting-started-with-spacemacs/screenshot4.png)
 
 To get ruby linting to work a bit better, we need to install a few gems by running the following in a shell
 ```
@@ -110,32 +110,32 @@ You can read more about what these enable by pressing `SPC-h-l ruby`.
 ## Basic navigation and editing
 There are a few keys you need to know. To navigate between files you can use `SPC-f-f`.
 
-![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot5.png)
+![image]({{site.url}}/assets/getting-started-with-spacemacs/screenshot5.png)
 
 To open the git client you can use `SPC-g-s` and then `h` to see keybinds.
-![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot6.png)
+![image]({{site.url}}/assets/getting-started-with-spacemacs/screenshot6.png)
 
 If you'd like to see all the commands you have available when editing in ruby mode, you can see what the spacemacs ruby layer added by pressing `SPC-h-l` and then typing in `ruby`.
 
-![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot7.png)
+![image]({{site.url}}/assets/getting-started-with-spacemacs/screenshot7.png)
 
 If you want to have a visual navigation of your files, you can press `SPC-p-t`. This only works if you are in a project (defined by being in a git project), so if you are not, you can press `SPC-f-t` instead.
 
-![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot1000.png)
+![image]({{site.url}}/assets/getting-started-with-spacemacs/screenshot1000.png)
 
 ## Ruby shortcuts
 
 Some handy shortcuts for ruby.
 
-![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot8.png)
+![image]({{site.url}}/assets/getting-started-with-spacemacs/screenshot8.png)
 
 If you have rubocop throwing some basic linting errors, you can get it to auto-fix it by running `SPC-m-r-r-F`, like so
 
 
-![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot9.png)
+![image]({{site.url}}/assets/getting-started-with-spacemacs/screenshot9.png)
 
 
-![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot10.png)
+![image]({{site.url}}/assets/getting-started-with-spacemacs/screenshot10.png)
 
 You can comment a line(s) by selecting it and commenting with `SPC-;`.
 
