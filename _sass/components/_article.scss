@@ -40,3 +40,15 @@
     margin-left: 40px;
   }
 }
+
+.c-article__meta {
+  @include ff--sans-serif(800);
+  @include fs--body;
+  color: rgba(black, .5);
+  margin-left: auto;
+
+  .c-article__author_img {
+    border-radius: 100px;
+    vertical-align: middle;
+  }
+}
