@@ -4,19 +4,19 @@ title: Getting Started With Spacemacs
 author: aria
 ---
 
-[Spacemacs](http://spacemacs.org) is a pre-made configuration for GNU editor Emacs. It combines the superior editing of vim and the extensibility of emacs into one thing,as well as premade configs for many languages.
+[Spacemacs](http://spacemacs.org) is a pre-made configuration for GNU editor [Emacs](https://www.gnu.org/software/emacs/). It combines the superior editing of [vim](http://www.vim.org) and the extensibility of Emacs into one thing, as well as premade configs for many languages.
 
 Installing Emacs
 ===================
 
-Depending on your operating system, installing emacs should be quite effortless. On arch linux it's as simple as
+Depending on your operating system, installing Emacs should be quite effortless. On Arch Linux it's as simple as
 ```shell
 sudo pacman -S emacs
 ```
 
 Once installed, it'll look pretty terrible.
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot1.png)
-So let's close out of that with `C-x C-c (Ctrl-x Ctrl-c)` and install spacemacs. If we go to [their website](http://spacemacs.org), you can see that the install string is to run
+So let's close out of that with `C-x C-c (Ctrl-x Ctrl-c)` and install Spacemacs. If we go to [their website](http://spacemacs.org), you can see that the install string is to run
 ```shell
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
@@ -25,12 +25,12 @@ Then start emacs again, and you'll be greeted with something that looks like thi
 Hit enter a few times and wait for the packages to install. 
 
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot3.png)
-Once this is done, there's a few things we have to do to get going in ruby. Before that, if you don't know how to navigate around with vim keys, i suggest you take a look at the tutorial by pressing `SPC-h-T` and checking out [The quickstart guide](http://spacemacs.org/doc/QUICK_START.html)
+Once this is done, there's a few things we have to do to get going in ruby. Before that, if you don't know how to navigate around with vim keys, I suggest you take a look at the tutorial by pressing `SPC-h-T` and checking out [The quickstart guide](http://spacemacs.org/doc/QUICK_START.html)
 
-Setting up ruby
+Setting up Ruby
 ===================
 
-First off, we need to add a few layers. Hit `SPC-f-e-d` to head to your config file and find the line that reads
+First off, we need to add a few layers. Layers are pre-configured groups of plugins made for emacs, to help you get straight into programming. Hit `SPC-f-e-d` to head to your config file and find the line that reads
 ```elisp
    dotspacemacs-configuration-layers
    '(
@@ -61,9 +61,7 @@ Edit it like so to add some necessary layers
    ;; ----------------------------------------------------------------
    helm
 -  ;; auto-completion
--  ;; better-defaults
 +  auto-completion
-+  better-defaults
    emacs-lisp
 -  ;; git
 +  git
@@ -84,6 +82,23 @@ Edit it like so to add some necessary layers
    )
 ```
 
+Each layer does the following:
+  * auto-completion
+  Adds auto completion.
+  * git
+  Adds the [magit](https://magit.vc) client to emacs.
+  * shell
+  Enables you to use your shell via `SPC-'`
+  * ruby
+  Adds the ruby layer, with code completion, highlighting, etc.
+  * ruby-on-rails
+  Helper layer for rails development, navigating, etc.
+  * syntax-checking
+  Enables linting and inline display of things like rubocop.
+  
+If you'd like to learn more, you can view their help docs with `SPC-h-l`
+  
+
 Now press `SPC-q-r` to restart emacs, and it'll download all the packages.
 
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot4.png)
@@ -92,10 +107,10 @@ To get ruby linting to work a bit better, we need to install a few gems by runni
 ```
 gem install pry pry-doc ruby_parser rubocop
 ```
+You can read more about what these enable by pressing `SPC-h-l ruby`.
 
 Basic navigation and editing
 ===================================
-<!-- TODO: more? -->
 There are a few keys you need to know. To navigate between files you can use `SPC-f-f`.
 
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot5.png)
@@ -126,7 +141,7 @@ If you have rubocop throwing some basic linting errors, you can get it to auto-f
 
 ![]({{site.url}}/assets/getting-started-with-spacemacs/screenshot10.png)
 
-You can comment a line(s) by selecting it and comenting with `SPC-;`.
+You can comment a line(s) by selecting it and commenting with `SPC-;`.
 
 Final Tweaks
 ===============
@@ -145,7 +160,7 @@ Head to your config file and add `themes-megapack` to your list of layers and re
      ;; version-control
 ```
 
-You can then browse themes with `SPC-T-s`. Once you've found the theme you like (I pick `monokai` or `solarized-dark`), you can set it as default in spacemacs by editing this line.
+You can then browse themes with `SPC-T-s`. Once you've found the theme you like (I pick `monokai` or `solarized-dark`), you can set it as default in Spacemacs by editing this line.
 
 ```diff
 -   dotspacemacs-themes '(spacemacs-dark
@@ -153,3 +168,16 @@ You can then browse themes with `SPC-T-s`. Once you've found the theme you like 
 +                         spacemacs-dark
                           spacemacs-light)
 ```
+
+Changing fonts
+-----------------
+
+If you'd like to change your font, head into your config file with `SPC-f-e-d` and look for this line
+```elisp
+   dotspacemacs-default-font '("Source Code Pro"
+                               :size 13
+                               :weight normal
+                               :width normal
+                               :powerline-scale 1.1)
+```
+Change `"Source Code Pro"` to the font you would like and restart with `SPC-q-s`!
