@@ -2,18 +2,11 @@
    Article
    ========================================================================== */
 
-.c-article {
-
-}
-
 .c-article__main {
   max-width: 76rem; // 760px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
-  padding-right: 2.5rem;
-  padding-left: 2.5rem;
+  padding: 7.5rem 2.5rem;
   @include fs--body;
 
   > * {
@@ -39,6 +32,13 @@
   ul, ol {
     margin-left: 40px;
   }
+
+  img {
+    display: block;
+    margin: .8em auto;
+    background-color: #eef;
+    padding: 1em;
+  }
 }
 
 .c-article__meta {
@@ -46,9 +46,4 @@
   @include fs--body;
   color: rgba(black, .5);
   margin-left: auto;
-
-  .c-article__author_img {
-    border-radius: 100px;
-    vertical-align: middle;
-  }
 }
