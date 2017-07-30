@@ -2,6 +2,7 @@ language: ruby
 
 script:
   - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --disable-external
 
 env:
   global:
