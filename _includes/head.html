@@ -12,4 +12,9 @@
   <link href='{{ site.url }}/assets/favicon.png' rel='icon' type='image/png'>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  {% if page.custom_css %}
+    {% for stylesheet in page.custom_css %}
+      <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+    {% endfor %}
+  {% endif %}
 </head>
