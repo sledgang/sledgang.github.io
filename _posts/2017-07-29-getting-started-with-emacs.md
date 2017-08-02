@@ -2,6 +2,7 @@
 layout: post
 title: Getting Started With Spacemacs
 author: aria
+tags: editor emacs
 ---
 
 [Spacemacs](http://spacemacs.org) is a pre-made configuration for GNU editor [Emacs](https://www.gnu.org/software/emacs/). It combines the superior editing of [vim](http://www.vim.org) and the extensibility of Emacs into one thing, as well as premade configs for many languages.
