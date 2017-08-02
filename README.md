@@ -25,8 +25,11 @@ author: name
 
 > **Note:** If you're a new member of the blog, be sure you have an author entry in our `_config.yml`.
 
+**Members: Please *squash posts* into one commit when merging to `master` following approval.**
+
 ### Updating Jekyll theme, adding new pages, etc.
 
 - Please discuss these in the Discord beforehand before putting the time into the blog frontend (since this affects everyone)
 - If you can, throw up your own host so we can check it out. Otherwise provide screenshots, etc.
 - Test the layout as best you can ensuring existing posts render correctly, especially if your addition relies on newly required front matter to render correctly.
+- `custom_css` front matter property: Our front matter supports this key for adding special CSS to special pages. I.e.; not blog posts. Make use of this property when adding new top-level pages that need special formatting that doesn't constitute a change to the master CSS pipeline.
