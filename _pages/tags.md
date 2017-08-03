@@ -10,7 +10,7 @@ Click on a tag to see relevant list of posts:
 
 {% for tag in site.tags %}
   {% assign t = tag | first %}
-  [`{{ t | downcase }}`]({{ site.url }}/tags/#{{ t | downcase | replace:" ","-" }}) 
+  [`{{ t | downcase }}`](#{{ t | downcase | replace:" ","-" }}) 
 {% endfor %}
 
 ---
@@ -19,12 +19,12 @@ Click on a tag to see relevant list of posts:
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 
-<h4><a name="{{ t | downcase | replace:" ","-" }}"></a><a class="internal" href="/tag/#{{ t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></h4>
+<h4><a name="{{ t | downcase | replace:" ","-" }}"></a><a class="internal" href="#{{ t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></h4>
 <ul>
 {% for post in posts %}
   {% if post.tags contains t %}
   <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ post.url }}.html">{{ post.title }}</a>
     <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
   </li>
   {% endif %}
