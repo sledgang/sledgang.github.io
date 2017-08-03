@@ -10,7 +10,7 @@ Click on a tag to see relevant list of posts:
 
 {% for tag in site.tags %}
   {% assign t = tag | first %}
-  [`{{ t | downcase }}`]({{ site.url }}/tags/#{{ t | downcase | replace:" ","-" }}) 
+  [`{{ t | downcase }}`](#{{ t | downcase | replace:" ","-" }}) 
 {% endfor %}
 
 ---
