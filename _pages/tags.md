@@ -19,7 +19,7 @@ Click on a tag to see relevant list of posts:
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 
-<h4><a name="{{ t | downcase | replace:" ","-" }}"></a><a class="internal" href="/tags/#{{ t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></h4>
+<h4><a name="{{ t | downcase | replace:" ","-" }}"></a><a class="internal" href="#{{ t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></h4>
 <ul>
 {% for post in posts %}
   {% if post.tags contains t %}
