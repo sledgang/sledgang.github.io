@@ -6,5 +6,5 @@ layout: page
 {% assign author = site.authors[page.author] %}
 <aside class="c-article__meta">
     by
-    {{ author.real_name }} <a href="https://github.com/{{ author.github }}">{{ author.name }}</a> &mdash; {{ page.date | date: "%b %-d, %Y" }}
+    <a href="https://github.com/{{ author.github }}">{{ author.real_name | default: author.name }}</a> &mdash; {{ page.date | date: "%b %-d, %Y" }}
 </aside>
