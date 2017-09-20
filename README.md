@@ -23,6 +23,8 @@ author: name
 ---
 ```
 
+The `date` field may be filled initially with the date of authorship, or the date of opening the pull request. It will be updated to the current date when the post is merged & published to reflect the date of publication. Other blog members should add a commit to your PR before they merge it that updates this field.
+
 > **Note:** If you're a new member of the blog, be sure you have an author entry in our `_config.yml`.
 
 **Members: Please *squash posts* into one commit when merging to `master` following approval.**
