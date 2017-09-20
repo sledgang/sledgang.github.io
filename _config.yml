@@ -67,6 +67,10 @@ authors:
     real_name: Zac Nowicki
     discord_discrim: 2639
     github: z64
+  pixel:
+    name: PixeL
+    discord_discrim: 7065
+    github: pixelinc
 
 # Build settings
 markdown: kramdown
