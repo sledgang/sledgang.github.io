@@ -20,6 +20,7 @@ layout: post
 title: "Your title"
 date: 2017-07-29 15:57:30 -0500
 author: name
+tags: ruby tutorial
 ---
 ```
 
